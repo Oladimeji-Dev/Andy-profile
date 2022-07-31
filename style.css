@@ -230,4 +230,13 @@ svg:hover{
         width: 90%;
         margin: 0 auto;
     }
+    .gallery-display .image-display{
+        margin-bottom: 20px;
+    }
+    .working-with-us{
+        width: 90%;
+    }
+    .working-with-us h1{
+        font-size: 2rem;
+    }
 }
