@@ -1,0 +1,233 @@
+/* For headings: https://fonts.google.com/specimen/Prata */
+@import url('https://fonts.googleapis.com/css2?family=Prata&display=swap');
+/* For body: https://fonts.google.com/specimen/Inter */
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    color: #fffffff3;
+    max-width: 1440px;
+    font-family: 'Prata', serif;
+    margin: 0 auto;
+}
+h1,p{
+    margin-top: 0;
+    margin-bottom: 0;
+}
+h1{
+    font-family: 'Inter', sans-serif;
+}
+img{
+    max-width: 1000px;
+}
+.container{
+    width: 80%;
+    margin: 0 auto;
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+}
+.navbar h1{
+    transition:  .25s ease-in;
+}
+.navbar h1:hover{
+    transform: scale(1.10);
+    cursor: pointer;
+}
+.btn{
+    background-color: yellow;
+    color: black;
+    outline: none;
+    border: 1px solid yellow;
+    padding: 8px 18px;
+    border-radius: 10px;
+    transition: .2s ease-in-out;
+}
+a{
+    text-decoration: none;
+}
+.btn:hover{
+    background-color: black;
+    color: yellow;
+    cursor: pointer;
+}
+.btn:active{
+    transform: scale(1.05);
+}
+.btn:focus{
+    outline: none;
+
+}
+.main-header{
+    padding: 20px 0;
+    font-family: 'Inter', sans-serif;
+    width: 55%;
+}
+.main-header h1{
+    margin-bottom: 10px;
+    font-size: 3rem;
+}
+.main-header p{
+    line-height: 20px;
+}
+.logo-display{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 0;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.gallery-display{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+.gallery-display .image-display{
+    width: 45%;
+    margin-bottom: 10px;
+}
+.image-display img{
+    width: 100%;
+}
+.image-display-text{
+    margin-top: 10px;
+}
+.image-display-text h1{
+    padding: 10px 0;
+}
+.fouders{
+    margin-top: 20px;
+    background-color: #8080807f;
+    width: 100%;
+    padding: 30px 0;
+
+}
+.fouders h1{
+    padding: 10px 0; 
+}
+.fouders p{
+    margin-bottom: 15px;
+    color: rgb(128, 128, 128);
+}
+.founder{
+    width: 45%;
+}
+.fouders .container{
+    display: flex;
+    justify-content: space-between;
+}
+.working-with-us{
+    padding: 30px 0;
+    width: 50%;
+}
+.working-with-us h1{
+    margin-bottom: 10px;
+    font-size: 2.5rem;
+}
+.working-with-us p{
+    padding: 20px 0;
+    color: grey;
+}
+footer{
+    margin-top: 20px;
+    background-color: #8080807f;
+    width: 100%;
+    padding: 10px 0;
+
+}
+footer h1{
+    font-size: 1.5rem;
+}
+footer .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0;
+}
+ svg{
+    margin-left: 10px;
+    transition: .2s ease-in;
+}
+svg:hover{
+    cursor: pointer;
+    transform: scale(1.10);
+}
+@media only screen and (max-width: 1250px) {
+    .container{
+        width: 90%;
+        margin: 0 auto;
+    }
+    .main-header{
+        padding: 20px 0;
+        font-family: 'Inter', sans-serif;
+        width: 100%;
+    }
+    .main-header h1{
+        font-size: 2rem;
+    }
+    .logo-display{
+        display: flex;
+        flex-wrap: wrap;
+        /* justify-content: space-between;
+        align-items: center;
+        padding: 30px 0;
+        margin-bottom: 20px; */
+        margin-top: 0px;
+        padding-top: 0;
+        
+    }
+    .logo-display svg{
+        width: 30%;
+        margin-top: 20px;
+    }
+    .gallery-display{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .gallery-display img{
+        width: 100%;
+    }
+    .image-display {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .gallery-display .image-display{
+        width:100%;
+    }
+    .image-display-text{
+        margin-top: 10px;
+    }
+    .fouders .container{
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+    }
+    .fouders h1{
+        font-size: 2rem;
+    }
+    .founder{
+        width: 100%;
+        margin:  0 auto;
+    }
+    .working-with-us{
+        width: 70%;
+    }
+}
+@media only screen and (max-width: 900px) {
+    .container{
+        width: 95%;
+        margin: 0 auto;
+    }
+}
